@@ -1,4 +1,12 @@
 *{
 padding: 0;
-margin: 35;
+margin: 40px;
+}
+
+header{
+height: 45px;
+}
+header nav ul{
+display: flex;
+margin-left: 80%;
 }
