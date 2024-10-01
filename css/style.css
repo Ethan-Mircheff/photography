@@ -1,5 +1,5 @@
 body {
-  padding: 5px;
+  padding: 1px;
   margin: 35px;
   margin-top: 15px;
   background-color: #1d1924;
@@ -9,7 +9,7 @@ body {
 
 header {
   height: 45px;
-  font-stretch: expanded;
+  font-stretch: ultra-expanded;
 }
 header nav ul {
   display: flex;
