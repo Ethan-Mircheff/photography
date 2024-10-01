@@ -1,12 +1,15 @@
 body {
   padding: 5px;
   margin: 35px;
+  margin-top: 70%;
   background-color: #1d1924;
-  color: #fdfcfc
+  color: #fdfcfc;
+  font-family: trebuchet;
 }
 
 header {
   height: 45px;
+  font-stretch: expanded;
 }
 header nav ul {
   display: flex;
