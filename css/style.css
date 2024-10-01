@@ -1,12 +1,13 @@
-*{
-padding: 5;
-margin: 40;
+body {
+  padding: 5px;
+  margin: 40px;
+  background-color: red;
 }
 
-header{
-height: 45px;
+header {
+  height: 45px;
 }
-header nav ul{
-display: flex;
-margin-left: 80%;
+header nav ul {
+  display: flex;
+  margin-left: 80%;
 }
