@@ -1,9 +1,10 @@
 body {
   padding: 5px;
   margin: 35px;
-  margin-top: 70%;
+  margin-top: 15px;
   background-color: #1d1924;
   color: #fdfcfc;
+  font-family: trebuchet;
 }
 
 header {
