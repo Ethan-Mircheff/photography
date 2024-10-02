@@ -9,7 +9,7 @@ body {
 
 header {
   height: 45px;
-  font-stretch: ultra-expanded;
+  letter-spacing: 2px;
 }
 header nav ul {
   display: flex;
