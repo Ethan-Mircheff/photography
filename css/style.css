@@ -6,7 +6,6 @@ body {
   color: #fdfcfc;
   font-family: "Trebuchet MS", Veranda, sans-serif;
 }
-
 header {
   height: 45px;
   letter-spacing: 2px;
@@ -14,4 +13,10 @@ header {
 header nav ul {
   display: flex;
   margin-left: 80%;
+}
+a:link{
+  color:#fdfcfc;
+}
+a:visited{
+  color:#fdfcfc;
 }
