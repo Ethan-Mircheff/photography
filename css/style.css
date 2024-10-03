@@ -17,6 +17,7 @@ header {
 header nav ul {
   display: flex;
   margin-left: 80%;
+  margin-right: 80%;
 }
 img {
   max-width: 500px;
