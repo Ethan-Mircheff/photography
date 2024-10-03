@@ -15,9 +15,9 @@ header nav ul {
   margin-left: 80%;
 }
 img {
-    max-width: 425px;
-		width: 100%;
-    height: auto;
+  max-width: 500px;
+	width: 100%;
+  height: auto;
 }
 a:link{
   color:#fdfcfc;
