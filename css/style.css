@@ -1,5 +1,5 @@
 body {
-  padding: 1px;
+  padding: 10px;
   margin: 35px;
   margin-top: 15px;
   background-color: #1d1924;
@@ -15,9 +15,9 @@ header nav ul {
   margin-left: 80%;
 }
 img {
-  max-width: 500px;
-	width: 100%;
-  height: auto;
+  max-height: 500px;
+	height: 100%;
+  width: auto;
 }
 a:link{
   color:#fdfcfc;
