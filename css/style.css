@@ -1,19 +1,17 @@
 html, body {
   width: 90%;
   height: 100%;
-  padding: 10px;
-  margin: 35px;
-  margin-right: 35px;
+  padding: 2px;
+  margin: 25px;
   margin-top: 15px;
   background-color: #1d1924;
   color: #fdfcfc;
   font-family: "Trebuchet MS", Veranda, sans-serif;
 }
 header {
-  height: 45px;
-  line-height: 45px;
-  letter-spacing: 3px;
-  background-color:#1a1519;
+  height: 75px;
+  line-height: 50px;
+  background-color: #1a1519;
 }
 header nav ul {
   display: flex;
