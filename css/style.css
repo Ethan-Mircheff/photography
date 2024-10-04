@@ -24,6 +24,7 @@ header nav ul {
   float: left;
   width: 33.33%;
   padding: 10px
+  text-align:center;
 }
 .row::after {
   content: "";
