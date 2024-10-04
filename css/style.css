@@ -23,13 +23,18 @@ header nav ul {
 .pic {
   float: left;
   width: 33.33%;
-  padding: 10px;
-  max-width: 100%;
+  padding: 10px
 }
 .row::after {
   content: "";
   clear: both;
   display: table;
+}
+@media screen and (max-width: 550px) {
+  .pic {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 a:link{
   color:#fdfcfc;
