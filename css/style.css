@@ -21,16 +21,16 @@ header nav ul {
   margin-left: 80%;
 }
 .pic {
-  float:left;
-  width:50%;
-  padding:10px
+  float: left;
+  width: 33.33%;
+  padding: 10px
 }
-.row::after{
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
-@media screen and (max-width= 500px) {
+@media screen and (max-width: 500px) {
   .pic {
     width: 100%;
   }
