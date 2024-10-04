@@ -20,11 +20,13 @@ header nav ul {
   display: flex;
   margin-left: 80%;
 }
+.row {
+  text-align:center;
+}
 .pic {
   float: left;
   width: 33.33%;
   padding: 10px
-  text-align:center;
 }
 .row::after {
   content: "";
