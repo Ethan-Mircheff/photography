@@ -20,12 +20,10 @@ header nav ul {
   display: flex;
   margin-left: 80%;
 }
-.row {
-  text-align:center;
-}
-.row figure {
-  margin:0px 20px;
+figure {
+  margin:auto;
   display:inline-block;
+  text-align:center;
 }
 .pic {
   float: left;
