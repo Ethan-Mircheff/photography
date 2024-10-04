@@ -32,7 +32,7 @@ header nav ul {
 }
 @media screen and (max-width: 550px) {
   .pic {
-    width: 100%;
+    max-width: 100%;
   }
 }
 a:link{
