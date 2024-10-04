@@ -30,7 +30,7 @@ header nav ul {
   clear: both;
   display: table;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1500px) {
   .pic {
     max-width: 100%;
   }
