@@ -23,6 +23,10 @@ header nav ul {
 .row {
   text-align:center;
 }
+.row figure {
+  margin:0px 20px;
+  display:inline-block;
+}
 .pic {
   float: left;
   width: 33.33%;
