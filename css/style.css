@@ -2,10 +2,10 @@
   box-sizing: border-box;
 }
 html, body {
-  width: 80%;
-  height: 85%;
+  width: 90%;
+  height: 100%;
   padding: 2px;
-  margin: 10%;
+  margin: 5%;
   background-color: #1d1924;
   color: #fdfcfc;
   font-family: "Trebuchet MS", Veranda, sans-serif;
