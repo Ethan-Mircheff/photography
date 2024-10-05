@@ -3,13 +3,13 @@
   box-sizing: border-box;
 }
 html, body {
-  width: 92%;
-  height: 94%;
+  width: 94%;
+  height: 95%;
   position: relative;
   top: 3%;
-  bottom: 3%;
-  right: 4%;
-  left: 4%;
+  bottom: 2%;
+  right: 3%;
+  left: 3%;
   background-color: #1d1924;
   color: #fdfcfc;
   font-family: "Trebuchet MS", Veranda, sans-serif;
