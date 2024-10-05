@@ -1,12 +1,15 @@
+
 * {
   box-sizing: border-box;
 }
 html, body {
+  width: 92%;
+  height: 94%;
   position: relative;
-  top: 2%;
-  bottom: 2%;
-  right: 5%;
-  left: 5%;
+  top: 3%;
+  bottom: 3%;
+  right: 4%;
+  left: 4%;
   background-color: #1d1924;
   color: #fdfcfc;
   font-family: "Trebuchet MS", Veranda, sans-serif;
