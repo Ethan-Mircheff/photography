@@ -25,7 +25,7 @@ header nav ul {
 }
 .pic {
   -ms-flex: 33.33%;
-  float: left;
+  vertical-align: middle;
   flex: 33.33%;
   max-width: 33.33%;
   padding: 10px
