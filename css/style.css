@@ -23,28 +23,19 @@ header nav ul {
   margin-left: 80%;
   margin-right: 80%;
 }
-.column {
-  -ms-flex: 25%;
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+.pic {
+  float: left;
+  width: 33.33%;
+  padding: 10px
 }
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 @media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
+  .pic {
+    width: 100%;
     max-width: 100%;
   }
 }
@@ -56,5 +47,5 @@ a:visited{
 }
 footer {
   margin-top: 25px;
-  margin-bottom:15px;
+  margin-bottom:5px;
 }
