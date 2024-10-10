@@ -4,7 +4,7 @@
 html, body {
   width: 94%;
   height: 95%;
-  position: static;
+  position: relative;
   top: 3%;
   bottom: 2%;
   right: 3%;
