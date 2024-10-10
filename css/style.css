@@ -24,10 +24,9 @@ header nav ul {
   margin-right: 80%;
 }
 .pic {
-  -ms-flex: 33.33%;
-  vertical-align: middle;
-  flex: 33.33%;
-  max-width: 33.33%;
+  float: left;
+  width: 33.33%;
+  vertical-alignment: middle;
   padding: 10px
 }
 .row::after {
@@ -37,8 +36,7 @@ header nav ul {
 }
 @media screen and (max-width: 600px) {
   .pic {
-    -ms-flex: 100%;
-    flex: 100%;
+    width: 100%;
     max-width: 100%;
   }
 }
@@ -50,5 +48,5 @@ a:visited{
 }
 footer {
   margin-top: 25px;
-  margin-bottom:15px;
+  margin-bottom:5px;
 }
