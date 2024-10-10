@@ -35,7 +35,8 @@ header nav ul {
 }
 @media screen and (max-width: 600px) {
   .pic {
-    width: 100%;
+    -ms-flex:100%;
+    flex: 100%;
     max-width: 100%;
   }
 }
