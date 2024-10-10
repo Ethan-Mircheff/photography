@@ -23,21 +23,26 @@ header nav ul {
   margin-left: 80%;
   margin-right: 80%;
 }
-.pic {
-  -ms-flex: 33.33%;
-  vertical-align: middle;
-  flex: 33.33%;
-  width: 100%;
-  max-width: 33.33%;
-  padding: 10px
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 @media screen and (max-width: 600px) {
-  .pic {
+  .column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
