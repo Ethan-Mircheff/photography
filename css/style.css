@@ -4,7 +4,7 @@
 html, body {
   width: 94%;
   height: 95%;
-  position: relative;
+  position: static;
   top: 3%;
   bottom: 2%;
   right: 3%;
@@ -24,7 +24,6 @@ header nav ul {
   margin-right: 80%;
 }
 .pic {
-  position:static;
   float: left;
   width: 33.33%;
   padding: 10px
@@ -48,5 +47,5 @@ a:visited{
 }
 footer {
   margin-top: 25px;
-  margin-bottom:5px;
+  margin-bottom:15px;
 }
