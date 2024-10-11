@@ -31,7 +31,7 @@ header nav ul {
 .row::after {
   content: "";
   clear: both;
-  display: table;
+  display: flex;
 }
 @media screen and (max-width: 600px) {
   .pic {
