@@ -26,12 +26,7 @@ header nav ul {
 .pic {
   flex: 1 1 30%;
   max-width: 30%;
-  padding: 0;
-}
-.pic {
-  flex: 1 1 30%;
-  max-width: 30%;
-  padding: 0;
+  padding: 10;
 }
 .row::after {
   content: "";
