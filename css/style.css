@@ -22,20 +22,19 @@ header nav ul {
   display: flex;
   margin-left: 80%;
   margin-right: 80%;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .pic {
-  float: left;
-  width: 33.33%;
-  padding: 10px
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: flex;
+  flex: 1 1 30%;
+  max-width: 30%;
+  padding: 0;
 }
 @media screen and (max-width: 600px) {
   .pic {
-    width: 100%;
+    flex: 1 1 100%;
     max-width: 100%;
   }
 }
