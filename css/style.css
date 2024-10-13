@@ -28,7 +28,7 @@ header nav ul {
   max-width: 30%;
   padding: 10;
 }
-a {
+.row a {
   flex: 1 1 30%;
   max-width: 30%;
   padding: 10;
