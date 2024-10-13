@@ -28,6 +28,11 @@ header nav ul {
   max-width: 30%;
   padding: 10;
 }
+a {
+  flex: 1 1 30%;
+  max-width: 30%;
+  padding: 10;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
