@@ -28,14 +28,7 @@ header nav ul {
   max-width: 30%;
   padding: 0;
 }
-.row a {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
 .row {
-  display: flex;
-  flex-wrap: wrap;
   gap: 10px;
 }
 .row::after {
