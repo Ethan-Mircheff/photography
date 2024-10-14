@@ -30,6 +30,7 @@ header nav ul {
 }
 .home {
   column-gap: 10%;
+  justify-content: space-between;
 }
 .row {
   display: flex;
