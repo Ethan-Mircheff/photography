@@ -29,7 +29,6 @@ header nav ul {
   padding: 0;
 }
 .home {
-  display: flex;
   column-gap: 10%;
 }
 .row {
