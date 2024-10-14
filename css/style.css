@@ -35,7 +35,7 @@ header nav ul {
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0px;
 }
 .row::after {
   content: "";
