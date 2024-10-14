@@ -30,6 +30,7 @@ header nav ul {
 }
 .home {
   gap: 10px;
+  padding: 10px;
 }
 .row {
   display: flex;
