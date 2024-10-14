@@ -48,6 +48,12 @@ header nav ul {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 900px) {
+  .pic {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+}
 a:link{
   color:#fdfcfc;
 }
