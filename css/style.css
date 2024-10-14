@@ -26,7 +26,7 @@ header nav ul {
 .pic {
   flex: 1 1 30%;
   max-width: 30%;
-  padding: 10;
+  padding: 0;
 }
 .row a {
   display: flex;
@@ -37,7 +37,6 @@ header nav ul {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-between;
 }
 .row::after {
   content: "";
