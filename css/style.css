@@ -40,23 +40,23 @@ header nav ul {
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 4 4px;
 }
 .row::after {
   content: "";
   clear: both;
   display: flex;
 }
-@media screen and (max-width: 600px) {
-  .pic {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
 @media screen and (max-width: 800px) {
   .pic {
     flex: 1 1 50%;
     max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pic {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 a:link{
