@@ -26,7 +26,12 @@ header nav ul {
 .pic {
   flex: 1 1 32%;
   max-width: 32%;
-  padding: 0;
+  padding: 0 4px;
+}
+.pic img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 .home {
   column-gap: 10px;
@@ -48,7 +53,7 @@ header nav ul {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .pic {
     flex: 1 1 50%;
     max-width: 50%;
