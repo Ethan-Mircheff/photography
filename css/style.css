@@ -26,7 +26,7 @@ header nav ul {
 .pic {
   flex: 1 1 32%;
   max-width: 32%;
-  padding: 0 4px;
+  padding: 4px;
 }
 .pic img {
   margin-top: 8px;
