@@ -63,6 +63,7 @@ header nav ul {
 .container {
   position: relative;
   display: inline-block;
+  text-align: center;
 }
 .image {
   opacity: 1;
