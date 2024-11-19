@@ -62,6 +62,7 @@ header nav ul {
 
 .container {
   position: relative;
+  display: inline-block;
 }
 .image {
   opacity: 1;
