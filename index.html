@@ -2,12 +2,40 @@
 <link rel="shortcut icon" type="image/x-icon" href="photos/favicon.ico">
 <html>
   <head>
-    <style>
-    </style>
-    <meta charset="utf-8">
+		<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>Ethan's Photography</title>
+    <style>
+.container {
+  position: relative;
+}
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container:hover .image {
+  opacity: 0.6;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #1d1924;
+  color: white;
+  font-size: 24px;
+  padding: 16px 16px;
+}
+    </style>
   </head>
   <h2><a style="text-decoration:none;" href="https://ethan-mircheff.github.io/photography/">Ethan's Photography</a></h2>
   <body>
