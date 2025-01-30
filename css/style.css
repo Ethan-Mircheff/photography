@@ -33,14 +33,11 @@ header nav ul {
   vertical-align: middle;
   width: 100%;
 }
-.home {
-  column-gap: 10px;
-  justify-content: space-between;
-}
 .row {
   display: flex;
   flex-wrap: wrap;
   gap: 4 4px;
+  justify-content: center;
 }
 .row::after {
   content: "";
