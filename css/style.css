@@ -24,23 +24,29 @@ header nav ul {
   margin-right: 80%;
 }
 .pic {
-  flex: 1 1 32%;
-  max-width: 32%;
+  flex: 1 1 30%; /* Allow images to shrink and grow */
+  max-width: 30%;
   padding: 4px;
+  box-sizing: border-box; /* Prevent padding from affecting width */
+}
+a {
+  display: block;
 }
 .pic img {
-  margin-top: 8px;
-  vertical-align: middle;
+  display: block;
   width: 100%;
+  height: auto;
 }
 .home {
-  column-gap: 10px;
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px; /* Space between items */
 }
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 4 4px;
+  gap: 4px; /* Corrected */
 }
 .row::after {
   content: "";
