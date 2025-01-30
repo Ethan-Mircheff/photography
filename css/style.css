@@ -24,28 +24,31 @@ header nav ul {
   margin-right: 80%;
 }
 .pic {
-  flex: 1 1 32%;
-  max-width: 32%;
+  flex: 1 1 calc(33.33% - 8px);
+  max-width: calc(33.33% - 8px);
   padding: 4px;
 }
 .pic img {
-  margin-top: 8px;
-  vertical-align: top;
+  display: block;
   width: 100%;
 }
 .home {
-  justify-content: space-center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 4 4px;
+  gap: 4px;
 }
 .row::after {
   content: "";
   clear: both;
   display: flex;
 }
+
 @media screen and (max-width: 800px) {
   .pic {
     flex: 1 1 50%;
