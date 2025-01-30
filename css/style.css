@@ -37,12 +37,13 @@ header nav ul {
 .home {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 8px;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 4px;
 }
 .row::after {
