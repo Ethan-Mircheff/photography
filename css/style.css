@@ -23,11 +23,6 @@ header nav ul {
   margin-left: 80%;
   margin-right: 80%;
 }
-.pic {
-  flex: 1 1 32%;
-  max-width: 32%;
-  padding: 4px;
-}
 .pic img {
   margin-top: 8px;
   vertical-align: middle;
@@ -46,6 +41,13 @@ header nav ul {
   content: "";
   clear: both;
   display: flex;
+}
+@media screem and (max-width: 1600px) {
+  .pic {
+    flex: 1 1 32%;
+    max-width: 32%;
+    padding: 4px;
+  }
 }
 @media screen and (max-width: 800px) {
   .pic {
