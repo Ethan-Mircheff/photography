@@ -24,29 +24,26 @@ header nav ul {
   margin-right: 80%;
 }
 .pic {
-  flex: 1 1 30%;
-  max-width: 30%;
+  flex: 1 1 32%;
+  max-width: 32%;
   padding: 4px;
-  box-sizing: border-box;
 }
 .pic img {
-  display: block;
+  margin-top: 8px;
+  vertical-align: middle;
   width: 100%;
-  height: auto;
 }
 .home {
-  display: flex;
-  flex-wrap: wrap;
+  column-gap: 10px;
   justify-content: space-between;
-  gap: 8px;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 4px;
+  gap: 4 4px;
 }
 .row::after {
+  content: "";
   clear: both;
   display: flex;
 }
