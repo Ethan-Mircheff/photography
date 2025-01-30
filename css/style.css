@@ -24,12 +24,15 @@ header nav ul {
   margin-right: 80%;
 }
 .pic {
-  flex: 1 1 calc(33.33% - 8px); /* Subtract gap size */
-  max-width: calc(33.33% - 8px);
+  flex: 1 1 30%;
+  max-width: 30%;
   padding: 4px;
+  box-sizing: border-box;
 }
 .pic img {
+  display: block;
   width: 100%;
+  height: auto;
 }
 .home {
   display: flex;
@@ -43,7 +46,6 @@ header nav ul {
   gap: 4px;
 }
 .row::after {
-  content: "";
   clear: both;
   display: flex;
 }
