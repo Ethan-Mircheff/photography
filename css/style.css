@@ -60,10 +60,6 @@ header nav ul {
   height: auto;
 }
 
-.a {
-  display: inline-block;
-}
-
 @media screen and (max-width: 800px) {
   .pic {
     flex: 1 1 calc(50% - 10px);
