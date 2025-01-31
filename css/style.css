@@ -15,7 +15,6 @@ html, body {
   font-family: "Trebuchet MS", Veranda, sans-serif;
 }
 
-/* Header */
 header {
   height: 75px;
   line-height: 65px;
@@ -28,32 +27,30 @@ header nav ul {
   margin-right: 80%;
 }
 
-/* Homepage Layout */
 .home {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px; /* Space between images */
+  gap: 10px;
 }
 
-.pic {
-  flex: 1 1 calc(33.33% - 10px); /* Three images per row with spacing */
+.a {
+  flex: 1 1 calc(33.33% - 10px);
   max-width: calc(33.33% - 10px);
   padding: 4px;
   box-sizing: border-box;
 }
 
-.pic img {
+.a img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* Gallery Page Layout */
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px; /* Corrected gap spacing */
+  gap: 4px;
   justify-content: center;
 }
 
