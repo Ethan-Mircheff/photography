@@ -61,14 +61,14 @@ header nav ul {
 }
 
 @media screen and (max-width: 800px) {
-  .pic {
+  .a {
     flex: 1 1 calc(50% - 10px);
     max-width: calc(50% - 10px);
   }
 }
 
 @media screen and (max-width: 600px) {
-  .pic {
+  .a {
     flex: 1 1 100%;
     max-width: 100%;
   }
