@@ -61,9 +61,7 @@ header nav ul {
 }
 
 .a {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: inline-block;
 }
 
 @media screen and (max-width: 800px) {
