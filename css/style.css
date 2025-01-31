@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
   box-sizing: border-box;
 }
@@ -19,7 +18,7 @@ html, body {
 /* Header */
 header {
   height: 75px;
-  line-height: 50px;
+  line-height: 65px;
   background-color: #1a1519;
 }
 
@@ -64,27 +63,24 @@ header nav ul {
   height: auto;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 800px) {
   .pic {
-    flex: 1 1 calc(50% - 10px); /* Two images per row */
+    flex: 1 1 calc(50% - 10px);
     max-width: calc(50% - 10px);
   }
 }
 
 @media screen and (max-width: 600px) {
   .pic {
-    flex: 1 1 100%; /* One image per row */
+    flex: 1 1 100%;
     max-width: 100%;
   }
 }
 
-/* Links */
 a:link, a:visited {
   color: #fdfcfc;
 }
 
-/* Footer */
 footer {
   margin-top: 25px;
   margin-bottom: 5px;
