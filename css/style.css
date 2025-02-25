@@ -83,7 +83,7 @@ header nav ul {
   width: 100%;
   opacity: 0;
   transition: .4s ease;
-  background-color: #4d495e;
+  background-color: #344161;
 }
 
 .pic:hover .overlay {
