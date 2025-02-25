@@ -27,13 +27,6 @@ header nav ul {
   margin-right: 80%;
 }
 
-.home {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
 .pic {
   flex: 1 1 calc(33.33% - 10px);
   max-width: calc(33.33% - 10px);
@@ -52,12 +45,6 @@ header nav ul {
   flex-wrap: wrap;
   gap: 4px;
   justify-content: center;
-}
-
-.row img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 @media screen and (max-width: 800px) {
