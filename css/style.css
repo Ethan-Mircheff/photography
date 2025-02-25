@@ -74,11 +74,6 @@ header nav ul {
   }
 }
 
-.container {
-  position: relative;
-  width: 50%;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -92,7 +87,7 @@ header nav ul {
   background-color: #008CBA;
 }
 
-.container:hover .overlay {
+.pic:hover .overlay {
   opacity: 1;
 }
 
