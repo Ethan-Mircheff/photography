@@ -70,7 +70,7 @@ header nav ul {
   width: 100%;
   opacity: 0;
   transition: .4s ease;
-  background-color: #344161;
+  background-color: #3a3248;
 }
 
 .pic:hover .overlay {
@@ -78,7 +78,7 @@ header nav ul {
 }
 
 .text {
-  color: white;
+  color: #fcfcfc;
   font-size: 25px;
   position: absolute;
   top: 50%;
