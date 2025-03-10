@@ -1,13 +1,13 @@
 $(document).ready(function () {
     $(".imgSmall").click(function () {
         $("#imgBig").attr("src", $(this).prop('src'));
-        $("#overlay").show();
-        $("#overlayContent").show();
+        $("#hoverOverlay").show();
+        $("#hoverOverlayContent").show();
     });
 
-    $("#imgBig, #overlay").click(function () {
+    $("#imgBig, #hoverOverlay").click(function () {
         $("#imgBig").attr("src", "");
-        $("#overlay").hide();
-        $("#overlayContent").hide();
+        $("#hoverOverlay").hide();
+        $("#hoverOverlayContent").hide();
     });
 });
