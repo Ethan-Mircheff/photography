@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".imgSmall").click(function () {
+    $(".pic").click(function () {
         $("#imgBig").attr("src", $(this).prop('src'));
         $("#clickOverlay").show();
         $("#clickOverlayContent").show();
