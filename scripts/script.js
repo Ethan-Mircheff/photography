@@ -10,16 +10,25 @@ function ready(click) {
   }
 }
 
-ready(function () {
+var onClick = function (element, handler) {
+  if (element.addEventListener) {
+    element.addEventListener('click', handler, false);
+  } else {
+    element.attachEvent('onclick', handler);
+  }
+};
+
+onClick(el, function () {
+  ready(function () {
     $(".pic").click(function () {
         $("#imgBig").attr("src", $(this).prop('src'));
         $("#clickOverlay").fadeIn(100);
         $("#clickOverlayContent").fadeIn(100);
     });
-
     $("#imgBig, #clickOverlay").click(function () {
         $("#imgBig").attr("src", "");
         $("#clickOverlay").fadeOut(100);
         $("#clickOverlayContent").fadeOut(100);
     });
+  });
 });
