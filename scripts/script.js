@@ -1,4 +1,16 @@
-$(document).ready(function () {
+function ready(click) {
+  if (document.readyState != 'loading') {
+    click();
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', click);
+  } else {
+    document.attachEvent('onreadystatechange', function () {
+      if (document.readyState != 'loading') click();
+    });
+  }
+}
+
+ready(function () {
     $(".pic").click(function () {
         $("#imgBig").attr("src", $(this).prop('src'));
         $("#clickOverlay").fadeIn(100);
