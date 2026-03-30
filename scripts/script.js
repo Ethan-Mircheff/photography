@@ -19,16 +19,15 @@ var onClick = function (element, handler) {
 };
 
 ready(function () {
-  onClick(".pic", function () {
-      $("#imgBig").attr("src", $(this).prop('src'));
-      $("#clickOverlay").fadeIn(100);
-      $("#clickOverlayContent").fadeIn(100);
+  onClick(document.querySelector('.pic'), function () {
+    $("#imgBig").attr("src", $(this).prop('src'));
+    $("#clickOverlay").fadeIn(100);
+    $("#clickOverlayContent").fadeIn(100);
   });
-  onClick("#imgBig, #clickOverlay", function () {
-      $("#imgBig").attr("src", "");
-      $("#clickOverlay").fadeOut(100);
-      $("#clickOverlayContent").fadeOut(100);
-    });
+  
+  onClick(document.querySelector("#imgBig, #clickOverlay"), function () {
+    $("#imgBig").attr("src", "");
+    $("#clickOverlay").fadeOut(100);
+    $("#clickOverlayContent").fadeOut(100);
   });
 });
-
