@@ -22,17 +22,16 @@ ready(function () {
   document.querySelectorAll(".pic").forEach(function (element) {
     onClick(element, function () {
       document.querySelector("#imgBig").setAttribute("src", this.src);
-      
-      function fadeIn("#clickOverlay", speed = 100) {
+      function fadeIn(selector, speed = 100) {
         var opacity = 0;
-        document.querySelector("#clickOverlay").style.opacity = 0;
-        document.querySelector("#clickOverlay").style.filter = '';
+        document.querySelector(selector).style.opacity = 0;
+        document.querySelector(selector).style.filter = '';
         var last = +new Date();
         var tick = function () {
           opacity += (new Date() - last) / speed;
-           if (opacity > 1) opacity = 1;
-          document.querySelector("#clickOverlay").style.opacity = opacity;
-          document.querySelector("#clickOverlay").style.filter = 'alpha(opacity=' + (100 * opacity || 0) + ')';
+          if (opacity > 1) opacity = 1;
+          document.querySelector(selector).style.opacity = opacity;
+          document.querySelector(selector).style.filter = 'alpha(opacity=' + (100 * opacity || 0) + ')';
           last = +new Date();
           if (opacity < 1) {
             (window.requestAnimationFrame && requestAnimationFrame(tick)) ||
@@ -42,25 +41,6 @@ ready(function () {
         tick();
       }
       fadeIn("#clickOverlay");
-      
-      function fadeIn("#clickOverlayContent", speed = 100) {
-        var opacity = 0;
-        document.querySelector("#clickOverlayContent").style.opacity = 0;
-        document.querySelector("#clickOverlayContent").style.filter = '';
-        var last = +new Date();
-        var tick = function () {
-          opacity += (new Date() - last) / speed;
-           if (opacity > 1) opacity = 1;
-          document.querySelector("#clickOverlayContent").style.opacity = opacity;
-          document.querySelector("#clickOverlayContent").style.filter = 'alpha(opacity=' + (100 * opacity || 0) + ')';
-          last = +new Date();
-          if (opacity < 1) {
-            (window.requestAnimationFrame && requestAnimationFrame(tick)) ||
-              setTimeout(tick, 16);
-          }
-        };
-        tick();
-      }
       fadeIn("#clickOverlayContent");
     });
   });
@@ -76,4 +56,3 @@ ready(function () {
     $("#clickOverlayContent").fadeOut(100);
   });
 });
-
