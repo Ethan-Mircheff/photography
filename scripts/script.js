@@ -24,14 +24,14 @@ ready(function () {
       document.querySelector("#imgBig").setAttribute("src", this.src);
       function fadeIn(selector, speed = 100) {
         var opacity = 0;
-        document.querySelector(selector).style.opacity = 0;
-        document.querySelector(selector).style.filter = '';
+        document.querySelector("#imgBig").style.opacity = 0;
+        document.querySelector("#imgBig").style.filter = '';
         var last = +new Date();
         var tick = function () {
           opacity += (new Date() - last) / speed;
           if (opacity > 1) opacity = 1;
-          document.querySelector(selector).style.opacity = opacity;
-          document.querySelector(selector).style.filter = 'alpha(opacity=' + (100 * opacity || 0) + ')';
+          document.querySelector("#imgBig").style.opacity = opacity;
+          document.querySelector("#imgBig").style.filter = 'alpha(opacity=' + (100 * opacity || 0) + ')';
           last = +new Date();
           if (opacity < 1) {
             (window.requestAnimationFrame && requestAnimationFrame(tick)) ||
