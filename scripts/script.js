@@ -21,7 +21,7 @@ var onClick = function (element, handler) {
 ready(function () {
   document.querySelectorAll(".pic").forEach(function (element) {
     onClick(element, function () {
-      $("#imgBig").attr("src", $(this).prop("src"));
+      $("#imgBig").attr("src", this.src);
       $("#clickOverlay").fadeIn(100);
       $("#clickOverlayContent").fadeIn(100);
     });
