@@ -21,18 +21,18 @@ var onClick = function (element, handler) {
 ready(function () {
   document.querySelectorAll(".pic").forEach(function (element) {
     onClick(element, function () {
-      $("#imgBig").attr("src", this.src);
+      "#imgBig".setAttribute("src", this.src);
       $("#clickOverlay").fadeIn(100);
       $("#clickOverlayContent").fadeIn(100);
     });
   });
   onClick(document.querySelector("#imgBig"), function () {
-    $("#imgBig").attr("src", "");
+    "#imgBig".setAttribute("src", "");
     $("#clickOverlay").fadeOut(100);
     $("#clickOverlayContent").fadeOut(100);
   });
   onClick(document.querySelector("#clickOverlay"), function () {
-    $("#imgBig").attr("src", "");
+    "#imgBig".setAttribute("src", "");
     $("#clickOverlay").fadeOut(100);
     $("#clickOverlayContent").fadeOut(100);
   });
