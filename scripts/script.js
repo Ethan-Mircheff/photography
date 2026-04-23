@@ -21,19 +21,23 @@ var onClick = function (element, handler) {
 ready(function () {
   document.querySelectorAll(".pic").forEach(function (element) {
     onClick(element, function () {
-    document.querySelector("#imgBig").setAttribute("src", this.src);
-    $("#clickOverlay").fadeIn(100);
-    $("#clickOverlayContent").fadeIn(100);
+      document.querySelector("#imgBig").setAttribute("src", this.src);
+      fadeInAll(".clickOverlay", 100);
+      fadeInAll(".clickOverlayContent", 100);
     });
   });
+
   onClick(document.querySelector("#imgBig"), function () {
     document.querySelector("#imgBig").setAttribute("src", "");
-    $("#clickOverlay").fadeOut(100);
-    $("#clickOverlayContent").fadeOut(100);
+    fadeOutAll(".clickOverlay", 100);
+    fadeOutAll(".clickOverlayContent", 100);
   });
-  onClick(document.querySelector("#clickOverlay"), function () {
-    document.querySelector("#imgBig").setAttribute("src", "");
-    $("#clickOverlay").fadeOut(100);
-    $("#clickOverlayContent").fadeOut(100);
+
+  document.querySelectorAll(".clickOverlay").forEach(function (el) {
+    onClick(el, function () {
+      document.querySelector("#imgBig").setAttribute("src", "");
+      fadeOutAll(".clickOverlay", 100);
+      fadeOutAll(".clickOverlayContent", 100);
+    });
   });
 });
