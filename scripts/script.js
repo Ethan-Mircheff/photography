@@ -69,7 +69,7 @@ function fadeOut(el, speed = 400) {
 ready(function () {
   document.querySelectorAll(".pic").forEach(function (element) {
     onClick(element, function () {
-      document.querySelector("#imgBig").setAttribute("src", this.src);
+      document.querySelector("#imgBig").setAttribute("src", element.src);
       fadeIn(document.querySelector("#clickOverlay"), 100);
       fadeIn(document.querySelector("#clickOverlayContent"), 100);
     });
