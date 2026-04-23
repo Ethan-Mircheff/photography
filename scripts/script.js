@@ -22,7 +22,7 @@ function fadeIn(el, speed = 400) {
   var opacity = 0;
 
   el.style.opacity = 0;
-  el.style.filter = '';
+  el.style.filter = 'alpha(opacity=0)';
 
   var last = +new Date();
   var tick = function () {
@@ -46,7 +46,7 @@ function fadeOut(el, speed = 400) {
   var opacity = 1;
 
   el.style.opacity = 1;
-  el.style.filter = '';
+  el.style.filter = 'alpha(opacity=100)';
 
   var last = +new Date();
   var tick = function () {
