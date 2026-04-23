@@ -1,3 +1,4 @@
+
 function ready(click) {
   if (document.readyState != "loading") {
     click();
@@ -67,21 +68,33 @@ function fadeOut(el, speed = 400) {
 }
 
 ready(function () {
+  var imgBig = document.querySelector("#imgBig");
+  var clickOverlay = document.querySelector("#clickOverlay");
+  var clickOverlayContent = document.querySelector("#clickOverlayContent");
+
+  // Check if required elements exist
+  if (!imgBig || !clickOverlay || !clickOverlayContent) {
+    console.error("Required elements not found in DOM");
+    return;
+  }
+
   document.querySelectorAll(".pic").forEach(function (element) {
     onClick(element, function () {
-      document.querySelector("#imgBig").setAttribute("src", element.src);
-      fadeIn(document.querySelector("#clickOverlay"), 100);
-      fadeIn(document.querySelector("#clickOverlayContent"), 100);
+      imgBig.setAttribute("src", element.getAttribute("src"));
+      fadeIn(clickOverlay, 100);
+      fadeIn(clickOverlayContent, 100);
     });
   });
-  onClick(document.querySelector("#imgBig"), function () {
-    document.querySelector("#imgBig").setAttribute("src", "");
-    fadeOut(document.querySelector("#clickOverlay"), 100);
-    fadeOut(document.querySelector("#clickOverlayContent"), 100);
+
+  onClick(imgBig, function () {
+    imgBig.setAttribute("src", "");
+    fadeOut(clickOverlay, 100);
+    fadeOut(clickOverlayContent, 100);
   });
-  onClick(document.querySelector("#clickOverlay"), function () {
-    document.querySelector("#imgBig").setAttribute("src", "");
-    fadeOut(document.querySelector("#clickOverlay"), 100);
-    fadeOut(document.querySelector("#clickOverlayContent"), 100);
+
+  onClick(clickOverlay, function () {
+    imgBig.setAttribute("src", "");
+    fadeOut(clickOverlay, 100);
+    fadeOut(clickOverlayContent, 100);
   });
 });
