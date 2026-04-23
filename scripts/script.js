@@ -18,6 +18,50 @@ var onClick = function (element, handler) {
   }
 };
 
+function fadeIn(el, speed = 200) {
+  el.style.opacity = 0;
+  el.style.display = "block";
+  let last = performance.now();
+  function tick(now) {
+    const delta = (now - last) / speed;
+    let opacity = parseFloat(el.style.opacity) + delta;
+    if (opacity >= 1) {
+      el.style.opacity = 1;
+    } else {
+      el.style.opacity = opacity;
+      last = now;
+      requestAnimationFrame(tick);
+    }
+  }
+  requestAnimationFrame(tick);
+}
+
+function fadeOut(el, speed = 200) {
+  el.style.opacity = 1;
+  let last = performance.now();
+  function tick(now) {
+    const delta = (now - last) / speed;
+    let opacity = parseFloat(el.style.opacity) - delta;
+    if (opacity <= 0) {
+      el.style.opacity = 0;
+      el.style.display = "none";
+    } else {
+      el.style.opacity = opacity;
+      last = now;
+      requestAnimationFrame(tick);
+    }
+  }
+  requestAnimationFrame(tick);
+}
+
+function fadeInAll(selector, speed) {
+  document.querySelectorAll(selector).forEach(el => fadeIn(el, speed));
+}
+
+function fadeOutAll(selector, speed) {
+  document.querySelectorAll(selector).forEach(el => fadeOut(el, speed));
+}
+
 ready(function () {
   document.querySelectorAll(".pic").forEach(function (element) {
     onClick(element, function () {
