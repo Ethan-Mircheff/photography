@@ -63,6 +63,11 @@ function fadeOutAll(selector, speed) {
 }
 
 ready(function () {
+  function closeOverlay() {
+    document.querySelector("#imgBig").setAttribute("src", "");
+    fadeOutAll(".clickOverlay", 100);
+    fadeOutAll(".clickOverlayContent", 100);
+  }
   document.querySelectorAll(".pic").forEach(function (element) {
     onClick(element, function () {
       document.querySelector("#imgBig").setAttribute("src", this.src);
@@ -70,18 +75,15 @@ ready(function () {
       fadeInAll(".clickOverlayContent", 100);
     });
   });
-
-  onClick(document.querySelector("#imgBig"), function () {
-    document.querySelector("#imgBig").setAttribute("src", "");
-    fadeOutAll(".clickOverlay", 100);
-    fadeOutAll(".clickOverlayContent", 100);
-  });
-
+  onClick(document.querySelector("#imgBig"), closeOverlay);
   document.querySelectorAll(".clickOverlay").forEach(function (el) {
-    onClick(el, function () {
-      document.querySelector("#imgBig").setAttribute("src", "");
-      fadeOutAll(".clickOverlay", 100);
-      fadeOutAll(".clickOverlayContent", 100);
-    });
+    onClick(el, closeOverlay);
+  });
+  document.addEventListener("keydown", function (event) {
+    const overlay = document.querySelector(".clickOverlay");
+    if (!overlay || overlay.style.display === "none") return;
+    if (event.key === "Escape") {
+      closeOverlay();
+    }
   });
 });
