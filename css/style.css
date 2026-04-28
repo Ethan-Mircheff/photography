@@ -15,6 +15,11 @@ html, body {
   font-family: "Trebuchet MS", Veranda, sans-serif;
 }
 
+.page {
+  margin: 0 auto;
+  padding: 10%;
+}
+
 header {
   height: 75px;
   line-height: 65px;
@@ -34,19 +39,6 @@ header nav ul {
   box-sizing: border-box;
 }
 
-.pic img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  justify-content: center;
-}
-
 @media screen and (max-width: 800px) {
   .pic {
     flex: 1 1 calc(50% - 10px);
@@ -59,6 +51,19 @@ header nav ul {
     flex: 1 1 100%;
     max-width: 100%;
   }
+}
+
+.pic img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
 }
 
 .overlay {
@@ -79,8 +84,6 @@ header nav ul {
 
 .clickOverlay {
     position: fixed;
-
-
     top: 0;
     left: 0;
     width: 100vw;
@@ -96,7 +99,6 @@ header nav ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     display: none;
     opacity: 0;
     z-index: 1001;
