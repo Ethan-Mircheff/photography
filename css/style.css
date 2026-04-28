@@ -11,6 +11,7 @@ html, body {
 
 .page {
   margin: 0 auto;
+  padding: 10%;
   width: 94%;
   height: 95%;
 }
