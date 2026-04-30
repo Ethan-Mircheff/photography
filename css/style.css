@@ -29,13 +29,20 @@ header nav ul {
 }
 
 .pic {
-  flex: 1 1 calc(33.33% - 10px);
-  max-width: calc(33.33% - 10px);
+  flex: 1 1 calc(25% - 10px);
+  max-width: calc(25% - 10px);
   padding: 4px;
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1600px) {
+  .pic {
+    flex:1 1 calc(33.33% - 10px);
+    max-width: calc(33.33% - 10px);
+  }
+}
+
+@media screen and (max-width: 900px) {
   .pic {
     flex: 1 1 calc(50% - 10px);
     max-width: calc(50% - 10px);
