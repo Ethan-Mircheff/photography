@@ -7,6 +7,9 @@ html, body {
   background-color: #191B24;
   color: #fdfcfc;
   font-family: "Trebuchet MS", Veranda, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .page {
