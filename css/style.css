@@ -26,6 +26,14 @@ header {
   background-color: #1a1519;
 }
 
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
 header nav ul {
   display: flex;
   margin-left: 80%;
